@@ -123,7 +123,7 @@ public class IntArrayList implements IntList {
             return null; //exception? outOfBounds
         }
         IntArrayList arrayList = new IntArrayList(toIndex-fromIndex+1);
-        for (int i=fromIndex;i<toIndex+1;i++){
+        for (int i=fromIndex;i<=toIndex;i++){
             arrayList.add(array[i]);
         }
         return arrayList;
